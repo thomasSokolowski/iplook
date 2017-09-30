@@ -59,10 +59,8 @@ public class IpController {
     }
 
     @RequestMapping(value = "/getLatest/", method = RequestMethod.GET)
-    public
-    @ResponseBody
+    public @ResponseBody
     IpDto getLatest() {
-
         return ipService.findTheNewestIp();
     }
 
